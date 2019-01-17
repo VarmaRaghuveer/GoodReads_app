@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default () => {
     return(
+        // Navbar for the application
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <NavLink className="navbar-brand" to="/">GoodReads App</NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">

@@ -8,6 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* Enabling Router for navigation in the app */}
         <Router>
           <div>
             <Route exact path="/" component={Home} />

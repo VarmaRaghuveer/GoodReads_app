@@ -70,28 +70,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 
-Should be able to search the books with name
-Clicking on the book should list details, ratings, description of the book, see attached for reference.
-Submit the code on GitHub, with clear instructions to run/compile the code.
-Host your code on a public web server of your choice like GITHUB, HEROKU etc.
-
-
-
-
-key: mtNHAHnRI7HWoT0Hzps7OQ
-secret: MVp3TvGukrHS5OBAYX0jb3QhiIQ2aVgI9CGWsiiCbU
-
-
-curl "https://www.goodreads.com/search.xml?key=mtNHAHnRI7HWoT0Hzps7OQ&q=Ender%27s+Game"
-
-
-
-
-
-https://www.goodreads.com/search.xml?key=mtNHAHnRI7HWoT0Hzps7OQ&q={BookName}
-https://www.goodreads.com/book/isbn/{ISBN-Number}?key=mtNHAHnRI7HWoT0Hzps7OQ
-
-
-
-
-https://bootswatch.com/4/sketchy/bootstrap.min.css

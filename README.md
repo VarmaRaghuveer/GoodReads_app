@@ -37,4 +37,5 @@ What I could have achieved more with time
 
 Future plans
 
-1) Add support to buy book from Amazon and other e-commerce portals from our application
+1) Add pagination feature to the search
+2) Add support to buy book from Amazon and other e-commerce portals from our application

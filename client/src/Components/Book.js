@@ -15,14 +15,17 @@ export default class Book extends Component {
     componentWillMount = async () => {
         try{
             this.setState({'errorMessage': '', 'isLoading': true});
+            //create url to fetch book details
             const url = `${config.SERVER_URL}${this.props.location.pathname}`;
             const data = await fetch(url);
             const response = await data.json();
-            console.log(JSON.stringify(response));
+            //if books list is found set it to state
             this.setState({
                 'book': response.books,
                 'isLoading': false
             });
+
+            // if error recieved from server save to set
             if(response.error){
                 this.setState({
                     'infoMessage': 'Ooops!!! No book found...',
@@ -30,6 +33,7 @@ export default class Book extends Component {
                 })
             }
         } catch(err){
+            // if error occured save to set
             this.setState({
                 'errorMessage': 'Something went wrong, please try again in some time...',
                 'isLoading': false
@@ -44,6 +48,7 @@ export default class Book extends Component {
                 <Navbar />
                 <div className="container pt-3">
                     <NavLink to='/'>back</NavLink>
+                        {/* display info for ongoing operation */}
                         {
                             this.state.infoMessage !== ''
                                 ?
@@ -53,7 +58,8 @@ export default class Book extends Component {
                                 :
                                     null
                         }
-                        {                            
+                        {/* if state is loading means some operation is going on */}
+                        {
                             this.state.isLoading
                                 ?
                                     <div className="text-center">
@@ -62,6 +68,7 @@ export default class Book extends Component {
                                 :
                                     null
                         }
+                        {/* if book is not empty display details about it else display no book found */}
                         {
                             this.state.book
                             ?
@@ -91,7 +98,7 @@ export default class Book extends Component {
                                         </div>
                                     </div>
                                 :
-                                    console.log('why here')
+                                    null
                         }
                 </div>
             </Fragment>
