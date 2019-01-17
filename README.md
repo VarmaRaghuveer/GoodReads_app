@@ -32,8 +32,7 @@ Solutions
 
 What I could have achieved more with time
 
-1) Implemented test cases for both frontend and backend
-
+1) Implemented test cases for for frontend
 
 Future plans
 
