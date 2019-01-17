@@ -28,3 +28,5 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => console.log(`Listening on ${PORT} port`));
 
+module.exports = app; // for testing
+

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "mocha server/routes/test/book.js --timeout 10000"
   },
   "keywords": [],
   "author": "Raghuveer Varma",
@@ -16,5 +17,10 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^5.2.0"
   }
 }
